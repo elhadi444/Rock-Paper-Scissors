@@ -10,7 +10,8 @@ function getComputerChoice(){
 
 function getPlayerChoice(){
     let PlayerChoice = prompt("Write 'Rock' 'Paper' or 'Scissors'")
-    while(PlayerChoice.toLowerCase() != "rock" && PlayerChoice.toLowerCase() != "paper" && PlayerChoice.toLowerCase() != "scissors"){
+    while(PlayerChoice.toLowerCase() != "rock" && PlayerChoice.toLowerCase() != "paper" && 
+            PlayerChoice.toLowerCase() != "scissors"){
         PlayerChoice = prompt("You can only write 'Rock' 'Paper' or 'Scissors'")
     }
     return PlayerChoice.toLowerCase()
@@ -37,9 +38,13 @@ function playRound(playerSelection, computerSelection, score) {
 function calcScore(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) 
         return 0
-    else if ((playerSelection == "rock" && computerSelection == "paper") || (playerSelection == "paper" && computerSelection == "scissors") || (playerSelection == "scissors" && computerSelection == "rock"))
+    else if ((playerSelection == "rock" && computerSelection == "paper") || 
+                (playerSelection == "paper" && computerSelection == "scissors") || 
+                (playerSelection == "scissors" && computerSelection == "rock"))
         return -1
-    else if ((playerSelection == "rock" && computerSelection == "scissors") || (playerSelection == "paper" && computerSelection == "rock") || (playerSelection == "scissors" && computerSelection == "paper"))
+    else if ((playerSelection == "rock" && computerSelection == "scissors") || 
+                (playerSelection == "paper" && computerSelection == "rock") || 
+                (playerSelection == "scissors" && computerSelection == "paper"))
         return 1
 }
 
