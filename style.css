@@ -45,8 +45,8 @@ h1{
     transition: transform 200ms ease-in-out;
 }
 
-.btn:hover,
-.btn:focus{
+.btn:hover:enabled,
+.btn:focus:enabled{
     transform: scale(0.99);
     border-color: #333;
     color: #333;
