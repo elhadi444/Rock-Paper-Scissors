@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #888;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-size: 7rem;
+    font-weight: bold;
+}
+
+.exp{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.container{
+    text-align: center;
+}
+
+.score{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.game-comment{
+    font-size: 1.5rem;
+    margin-bottom: 2em;
+}
+
+.btn{
+    padding: 0.5em 2.5em;
+    border: 3PX solid black;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: #ccc;
+
+    transition: transform 200ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus{
+    transform: scale(0.99);
+    border-color: #333;
+    color: #333;
+}
